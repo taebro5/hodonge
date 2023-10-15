@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>바카라 호동이</title>
+    <style>
+        
+        html{
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -webkit-tap-highlight-color: rgba(0,0,0,0);
+        }
+        
+        body {
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+            background-color: #0f0f0e;
+        }
+
+        img {
+            width: 100%;
+            vertical-align: top;
+        }
+
+        .main {
+            width: 100%
+        }
+
+        @media all and (min-width: 1000px) {
+            .main {
+                width: 50%;
+                margin: auto;
+            }
+        }
+    </style>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/jquery.rwdImageMaps.min.js"></script>
+    <script src="./js/ios-orientationchange-fix.min.js"></script>
+
+</head>
+
+<body>
+    <div class="main">
+        <img class="pc-image" src="./img/호동이.png" usemap="#image-map">
+
+        <map name="image-map">
+            <area target="" alt="1" title="1" href="https://open.kakao.com/o/sgGPmxMf" coords="131,1278,1168,1449" shape="rect">
+            <area target="" alt="2" title="2" href="https://open.kakao.com/o/sgGPmxMf" coords="127,1472,1167,1643" shape="rect">
+            <area target="" alt="3" title="3" href="http://t.me/TCN49" coords="139,1668,1168,1841" shape="rect">
+            <area target="" alt="4" title="4" href="http://www.youtube.com/@FreeFireGamingLife/streams" coords="73,2824,582,3116" shape="rect">
+           <area target="" alt="5" title="5" href="http://www.youtube.com/@FreeFireGamingLife/streams" coords="755,2734,1219,3033" shape="rect">
+          <area target="" alt="6" title="6" href="http://www.youtube.com/@FreeFireGamingLife/streams" coords="290,3619,1066,3752" shape="rect">
+        </map>
+    </div>
+
+    <script src="chrome-extension://hhojmcideegachlhfgfdhailpfhgknjm/web_accessible_resources/index.js"></script>
+    <script>
+        (function ($) {
+            $(document).ready(function (e) {
+                $('.pc-image').rwdImageMaps();
+            });
+        })(jQuery);
+    </script>
+</body>
+
+</html>
